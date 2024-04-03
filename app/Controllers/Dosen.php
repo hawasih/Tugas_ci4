@@ -56,8 +56,8 @@ public function tambah()
         $token = getenv('TELEGRAM_BOT_TOKEN'); // token bot
  
 		$datas = [
-		'text' => getenv("TELEGRAM_CHAT_ID"),
-		'chat_id' => '-1002125686744' //contoh bot, group id -442697126
+		// 'text' => getenv("TELEGRAM_CHAT_ID"),
+		// 'chat_id' => '-1002125686744' //contoh bot, group id -442697126
 		];
        
 		file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . http_build_query($datas) );
